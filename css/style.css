@@ -1,0 +1,126 @@
+body {
+    font-family: georgia, times, serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    /* Quito los márgenes que queden a los lados*/
+    margin: 0;
+}
+
+h1 {
+    font-size: 2 rem;
+    line-height: 1.3em;
+}
+
+p {
+    margin-bottom: 1.6em;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+/* Actuamos sobre la cabecera (nombrada header en el archivo html*/
+.header {
+    background: #B8DCF4;
+    color: #333;
+    /* relleno de 2rem arriba y abajo, 0 en los costados */
+    padding: 2rem 0;
+/* Hago la cabecera fija */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.header a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Actúo sobre los elementos de la lista*/
+.navigation ul{
+    margin: 0 2rem;
+    padding: 0;
+    /* Le quitamos los puntos de la lista */
+    list-style: none;
+}
+
+.navigation ul li {
+    /* Hacemos que los elementos de la lista se muestren uno al lado del otro */
+    display: inline-block;
+}
+
+/* Nos referimos a los enlaces dentro de dicho menú */
+.navigation ul li a {
+    display: block;
+    padding: 0.5rem 1;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    transition: all 0.4s linear;
+    border-radius: 10px;
+}
+
+.navigation ul li a:hover {
+    background: #D0E9F9;
+}
+
+.navigation ul li ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 90px;
+    padding: 14px;
+    visibility: hidden;
+    z-index: 10;
+    opacity:0;
+    transition: 300ms;
+}
+
+.navigation ul li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+}
+
+.navigation ul li ul li a{
+    display: grid;
+    color: #333;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    transition: 300ms;
+}
+
+.navigation ul li ul li:hover a{
+    background: #D0E9F9;
+    color: #333;
+    transform: scale(1.1);
+}
+
+.main{
+    padding-top: 8rem;
+}
+
+.redes {
+    padding-left: 2rem;
+}
+
+.main2{
+    padding-top: 5rem;
+    padding-bottom: 1.5rem;
+}
+
+.images{
+    margin-left: 4rem;
+}
+
+.images img {
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+
+.CV {
+    margin-left: 31.25rem;
+}

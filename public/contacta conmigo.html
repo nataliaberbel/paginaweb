@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html Lang = es>
+    <head>
+        <title>Pagina Web</title>
+        <link href="../css/style.css" rel = "stylesheet">
+        <body>
+            <header class="header">
+                <nav class = "navigation">
+                    <ul>
+                        <li><a href ="../index.html">Inicio</a></li>
+                        <li><a href = "contacta conmigo.html">Contacta Conmigo</a></li>
+                        <li><a href = "sobre mi.html">Sobre Mí</a></li>
+                        <li><a href = "socios.html">Socios</a></li>
+                        <li><a href = "sobre la asignatura.html">Sobre la Asignatura</a>
+                            <ul>
+                                <li><a href="detalle FII.html">Detalle FII</a></li>
+                            </ul>
+                            </li>
+                        <li><a href = "tema.html">Almería</a></li>
+                    </ul>
+                </nav>
+        </header>
+          <main class = "main2">
+            <div class="container">
+            <h2 style = "border: 2px solid lavender">Contacta conmigo</h2>
+            <h3>Mis datos:</h3>
+            <p><strong>Correo:</strong> 9306921@alumnos.ufv.es</p>
+            <p><strong>Telefono:</strong> 635 847 757</p>
+            <h3>Si prefiere que le contacte yo, inserte sus datos:</h3>
+            <form action="miScript.php" method="GET">
+                <label for = "name">Nombre:</label>
+                <input id="name" type = "text">
+                <br><br>
+                <label for = "surname">Apellido(s):</label>
+                <input id="surname" type = "text">
+                <br><br>
+                <label for="from">Email:</label>
+                <input id="to" type="email">
+                <br><br>
+                <label for="subject">Asunto:</label>
+                <input id="subject" name="subject" type="text">
+                <br><br>
+                <label for="body">Cuerpo:</label>
+                <textarea id="body" name="body"></textarea>
+                <button type="submit">Enviar</button>   
+            </form>
+            </div>
+            </main>
+        </body>
+    </head>
+</html>
