@@ -20,7 +20,7 @@ p {
     width: 90%;
     margin: 0 auto;
 }
-/* Actuamos sobre la cabecera (nombrada header en el archivo html*/
+/* Actuamos sobre la cabecera (nombrada header en el archivo html) */
 .header {
     background: #B8DCF4;
     color: #333;
@@ -31,6 +31,7 @@ p {
     left: 0;
     top: 0;
     width: 100%;
+    
 }
 
 .header a {
@@ -44,19 +45,19 @@ p {
     padding: 0;
     /* Le quitamos los puntos de la lista */
     list-style: none;
+    
 }
 
 .navigation ul li {
     /* Hacemos que los elementos de la lista se muestren uno al lado del otro */
     display: inline-block;
+    width:16%;
+    text-align: center;
 }
 
 /* Nos referimos a los enlaces dentro de dicho menú */
 .navigation ul li a {
     display: block;
-    padding: 0.5rem 1;
-    margin-left: 4rem;
-    margin-right: 4rem;
     transition: all 0.4s linear;
     border-radius: 10px;
 }
@@ -113,14 +114,14 @@ p {
 }
 
 .images{
-    margin-left: 4rem;
+    
+    text-align: center;
 }
 
-.images img {
-    margin-right: 3rem;
-    margin-left: 3rem;
+.images img  {
+    align-items: end;
 }
 
 .CV {
-    margin-left: 31.25rem;
+    text-align: center;
 }
